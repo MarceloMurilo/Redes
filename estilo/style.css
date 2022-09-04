@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background: url(/imagens/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.gradient{
+    background: linear-gradient(-45deg, #b0c6dff6, #e9dee4, #0bff02, #8bf336);
+    background-size: 400% 400%;
+   
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #290f6e;
+    background-position: 200px 300px;
+    left: 530px;
+    width: 150px;
+    height: 400px;
+    opacity: 0.4;
+    top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundTransition 4s alternate-reverse infinite;
+}
+
+
+        h1{
+            position: absolute;
+            top: 50px;
+            left: 450px;
+         text-align: center;
+            color: rgb(255, 255, 255);
+            box-shadow: 5px 5px 10px black;
+            width: 200px;
+            text-shadow: 1px 2px 5px black;
+        }
+  
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    
+}
+.nuvem {
+    position: relative;
+    left: 40vw;
+    top: 250px;
+    width: 500px;
+}
+.nuvem >img{
+    
+    background-size: cover;
+    height: 300px;
+}
+.nuvem:hover {
+    transform: translate(-3px, -3px);
+    
+}
+ 
+section#telefone {
+    display: flex;
+    position: absolute;
+    border: solid black;
+    top: 50%;
+    left: 53%;
+    transform: translate(-63%, -50%);
+    height: 600px;
+    width: 500px;
+    display: fixed;
+    background: url(/imagens/celular_mao.png) no-repeat;
+    background-size: 1200px;
+    background-position: -280px -205px;
+
+    
+}
+
+iframe#tela {
+    display: flex;
+    position: absolute;
+    top: 8.8vh;
+    left: 8.3rem;
+    width: 14.4rem;
+    height: 27.3rem;
+    box-sizing: border-box;
+    border: solid black;
+}
+section#redes-sociais {
+    position: relative;
+    left: 320px;
+    top: 230px;
+    text-align: center;
+    
+    
+}
+section#redes-sociais img {
+    width: 47px;
+    margin: 11px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(37, 34, 34, 0.432);
+    box-sizing: border-box;
+}
+section#redes-sociais img:hover {
+    border: 2px solid white;
+}
+
+div {
+    text-align: center;
+    color: #fff;
+}
+
+
+@keyframes backgroundTransition {
+    0% {
+        background-position: 0% 80%;
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
+}
